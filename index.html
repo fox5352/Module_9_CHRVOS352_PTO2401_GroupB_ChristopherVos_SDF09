@@ -5,56 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <title>Tailwind Is Cool</title>
 </head>
 <body>
 
-  <footer class="">
+  <footer class="bg-gradient-to-br from-[#74ebd5] to-[#ACB6E5]">
     <!-- container -->
-    <div>
+    <div class="grid grid-cols-4 p-8 mx-auto mb-6 border-b-2 border-white max-w-7xl text-zinc-700 sm:grid-cols-8">
+
       <!-- left colum 4 wide -->
-      <div>
-        <h2>Subscribe to my news letter</h2>
-        <form action="/" method="post">
-          <input type="email" name="email" id="email">
-          <button type="submit">Subscribe</button>
+      <div class="self-center col-span-4">
+        <h2 class="mb-3 text-2xl font-semibold text-[#23425F] drop-shadow">Subscribe to my news letter</h2>
+        <form class="flex py-4 pr-4" method="post">
+          <input class="flex-grow max-w-[60%] p-2 mr-2 rounded-md focus:shadow-lg" placeholder="email" type="email" name="email" id="email" aria-label="Enter your email address">
+          <button class="p-2 text-white rounded-md bg-zinc-700 duration-200 hover:bg-[#23425F] hover:scale-105" type="submit" aria-label="Email address">Subscribe</button>
         </form>
       </div>
   
       <!-- middle col 2 wid -->
-      <div>
-        <h2>Quick link</h2>
-        <ul>
-          <li>
-            <a href="#">Home</a>
+      <nav class="col-span-4 mb-2 custom" role="navigation" aria-label="Quick links">
+        <h3 class="mb-3 text-lg font-semibold text-[#23425F]">Quick link</h3>
+        <ul class="">
+          <li class="duration-200 hover:text-[#23425F] hover:text-lg hover:font-semibold">
+            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Home</a>
           </li>
-          <li>
-            <a href="#">Who We Are</a>
+          <li class="duration-200 hover:text-[#23425F] hover:text-lg hover:font-semibold">
+            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Who We Are</a>
           </li>
-          <li>
-            <a href="#">Our Philosophy</a>
+          <li class="duration-200 hover:text-[#23425F] hover:text-lg hover:font-semibold">
+            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Our Philosophy</a>
           </li>
         </ul>
-      </div>
+      </nav>
   
       <!-- right col 2 wide -->
-      <div>
-        <h2>Technologies</h2>
+      <aside class="col-span-4 custom" role="complementary" aria-label="Technologies used">
+        <h4 class="mb-3 text-lg font-semibold text-[#23425F]">Technologies</h4>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>TailwindCss</li>
         </ul>
-      </div>
+      </aside>
       <!-- line -->
-      <hr>
-      <!-- copyright -->
-      <div>
-        <p>Copyright &copy; 2021 <NAME></p>
-      </div>
       
+    </div>
+    
+    <!-- copyright -->
+    <div class="px-8 py-6 mx-auto text-xl font-semibold text-zinc-700 max-w-7xl">
+      <p>Copyright &copy; 2021</p>
     </div>
   </footer>
 
