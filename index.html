@@ -5,25 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  
   <link rel="stylesheet" href="/style.css">
   <title>Tailwind Is Cool</title>
 </head>
 <body>
 
   <footer class="bg-gradient-to-br from-[#74ebd5] to-[#ACB6E5]">
-    <!-- container -->
+    <!-- container cols 4-8 wide -->
     <div class="grid grid-cols-4 p-8 mx-auto mb-6 border-b-2 border-white max-w-7xl text-zinc-700 sm:grid-cols-8">
 
-      <!-- left colum 4 wide -->
+      <!-- left cols 4 wide -->
       <div class="self-center col-span-4">
         <h2 class="mb-3 text-2xl font-semibold text-[#23425F] drop-shadow">Subscribe to my news letter</h2>
-        <form class="flex py-4 pr-4" method="post">
-          <input class="flex-grow max-w-[60%] p-2 mr-2 rounded-md focus:shadow-lg" placeholder="email" type="email" name="email" id="email" aria-label="Enter your email address">
+        <form class="flex flex-wrap gap-2 py-4 pr-4 form" method="post">
+          <input class="flex-grow w-full p-2 mr-2 rounded-md focus:shadow-lg" placeholder="email" type="email" name="email" id="email" aria-label="Enter your email address">
           <button class="p-2 text-white rounded-md bg-zinc-700 duration-200 hover:bg-[#23425F] hover:scale-105" type="submit" aria-label="Email address">Subscribe</button>
         </form>
       </div>
   
-      <!-- middle col 2 wid -->
+      <!-- middle cols 4-2 wide -->
       <nav class="col-span-4 mb-2 custom" role="navigation" aria-label="Quick links">
         <h3 class="mb-3 text-lg font-semibold text-[#23425F]">Quick link</h3>
         <ul class="">
@@ -34,12 +36,15 @@
             <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Who We Are</a>
           </li>
           <li class="duration-200 hover:text-[#23425F] hover:text-lg hover:font-semibold">
-            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Our Philosophy</a>
+            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Our Mission</a>
+          </li>
+          <li class="duration-200 hover:text-[#23425F] hover:text-lg hover:font-semibold">
+            <a class="focus:scale-105 focus:font-semibold focus:outline-offset-2" href="#">Other Resources</a>
           </li>
         </ul>
       </nav>
   
-      <!-- right col 2 wide -->
+      <!-- right cols 4-2 wide -->
       <aside class="col-span-4 custom" role="complementary" aria-label="Technologies used">
         <h4 class="mb-3 text-lg font-semibold text-[#23425F]">Technologies</h4>
         <ul>
