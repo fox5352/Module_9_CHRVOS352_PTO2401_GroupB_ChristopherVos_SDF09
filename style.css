@@ -2,9 +2,15 @@
   .custom {
     grid-column: span 2/ span 2 !important;
   }
-
   .form > input {
     width: 60% !important;
     gap: 0;
+  }
+}
+
+@media screen and (max-width:389px) {
+  .form > input{
+    margin: 0;
+    margin-bottom: .625em;
   }
 }
